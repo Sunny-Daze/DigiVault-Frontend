@@ -6,9 +6,6 @@ const app = express();
 const port = 3000;
 
 app.use(express.json())
-// app.get("/", (req, res) => {
-//   res.send("Hello Sunny!");
-// });
 
 app.use("/api/auth", require("./routes/auth"));
 app.use("/api/data", require("./routes/data"));
